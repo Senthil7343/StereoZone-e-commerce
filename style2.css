@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #141414;
+    color: #a9afc3;
+    padding: 15px;
+}
+
+
+header {
+
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+
+}
+header h1 span{
+    color: red;
+}
+.firstd span{
+    color: red;
+}
+
+.menubars ul {
+    display: flex;
+    column-gap: 40px;
+    font-size: large;
+
+
+}
+
+.menubars ul li {
+    list-style-type: none;
+
+}
+
+.pro-div1 div {
+    border: 2px solid gray;
+
+
+}
+
+.pro-div1 button {
+    background: transparent;
+}
+
+
+.pro-div1 {
+    flex-direction: column;
+    row-gap: 40px;
+    display: flex;
+}
+
+.pro-div1 div {
+    border-radius: 5px;
+
+}
+
+.twelve {
+    position: relative;
+
+    display: none;
+
+
+}
+
+.leven {
+    position: relative;
+    display: block;
+}
+
+.thirteen {
+    position: relative;
+    display: none;
+}
+
+.fourteen {
+    position: relative;
+    display: none;
+}
+
+
+.div2 {
+    display: flex;
+    column-gap: 15%;
+}
+
+.final-btn a input {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    width: 50%;
+    cursor: pointer;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.btn button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 30%;
+    border-radius: 5px;
+    border: none;
+
+
+}
+
+.div-btn div {
+    border-radius: 5px;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    column-gap: 60px;
+    margin-top: 10%;
+}
+
+.details p a {
+    text-decoration: none;
+    color: #6b747c;
+}
+
+.details div {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.details div:hover {
+    background-color: red;
+    color: white;
+}
+
+.details p a:hover {
+    color: white;
+}
+
+.fuldetails {
+    width: 41%;
+    gap: 40px;
+    margin-top: 6%;
+
+
+}
+
+.fuldetails div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.relatepro h2 {
+    text-align: center;
+    margin-top: 10%;
+
+}
+
+.pro1 {
+    border-radius: 5px;
+}
+
+.twenty {
+    font-size: xx-large;
+    padding: 15px;
+    text-align: center;
+    margin-top: 50%;
+
+
+
+
+
+}
+
+.pro1-btn:hover {
+    background-color: rgb(161, 54, 54);
+}
+
+.pro2 {
+    align-items: center;
+}
+
+.cont1 {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.cont {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8%;
+
+
+}
+
+.common {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10%;
+    align-items: center;
+    margin-top: 5%;
+    justify-content: center;
+
+
+}
+
+.list li {
+    list-style-type: none;
+    margin-top: 10px;
+
+}
+
+.div1 input {
+    width: 100%;
+    background-color: #161819;
+    border-color: #2f2f2f;
+    padding: 10px;
+    margin-top: 15px;
+
+}
+
+.list {
+    margin-top: 15px;
+}
+
+.div2 p {
+    font-weight: bold;
+}
+
+.div1 button {
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+footer hr {
+    margin-top: 15px;
+}
+
+.part {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.part ul {
+    display: flex;
+    column-gap: 40px;
+    margin-right: 40px;
+
+}
+
+.part ul li {
+    list-style-type: none;
+}
+
+
+.div1 {
+    /* margin-left: 8%; */
+    margin-top: 5%;
+}
+
+footer {
+    background-color: black;
+
+}
+
+
+.toppro {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.img1 img {
+    height: 130px;
+    width: 130px;
+}
+
+.pro1 {
+    /* width: 20%; */
+    border: 2px solid #262626;
+}
+
+.img1 {
+    padding: 10px;
+    background-color: #161819;
+    text-align: center;
+
+}
+
+.text {
+    padding: 20px;
+}
+
+.text h3 {
+    margin-top: 15px
+}
+
+.par {
+    margin-top: 15px
+}
+
+.text hr {
+    margin-top: 15px
+}
+
+.pri {
+    margin-top: 15px
+}
+
+.bt {
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.pri span {
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: #6b747c;
+}
+
+.toppro-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 13px;
+    margin-top: 10%;
+    row-gap: 13px;
+}
+
+.pro1 {
+    border-radius: 5px;
+}
+
+.twenty {
+    font-size: xx-large;
+    padding: 15px;
+    text-align: center;
+    margin-top: 50%;
+
+}
+
+.bt {
+    color: white;
+}
+
+.pro2 {
+    align-items: center;
+}
+
+.cont1 {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.cont {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8%;
+
+
+}
+
+.common {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+}
+
+.firstd button {
+    padding: 10px 15px;
+    background-color: red;
+    color: white;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.firstd input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #2f2f2f;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.firstd p {
+    margin-top: 15px;
+}
+
+.div2 div {
+    margin-right: 1px;
+}
+
+.secondd p {
+    font-weight: bold;
+    margin-left: 8%;
+}
+
+.list {
+    margin-left: 8%;
+}
+
+.side {
+    height: 90%;
+    width: 30%;
+    background-color: #2f2f2f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    display: none;
+
+}
+
+.xx-mark {
+    position: absolute;
+    color: #141414;
+    top: 5px;
+    right: 5px;
+    font-size: 25px;
+
+}
+
+.side ul li {
+    margin-top: 20px;
+
+}
+
+.side ul li a {
+    text-decoration: none;
+
+}
+
+.toggle {
+    display: none;
+}

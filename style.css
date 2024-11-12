@@ -1,0 +1,544 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #141414;
+    color: #a9afc3;
+    padding: 15px;
+}
+
+
+header {
+
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+
+}
+header h1 span{
+    color: red;
+}
+.div1 span{
+    color: red;
+}
+
+.menubars ul {
+    display: flex;
+    column-gap: 40px;
+    font-size: large;
+
+
+}
+
+.menubars ul li {
+    list-style-type: none;
+
+}
+
+.menubars ul a {
+    color: #6b747c;
+}
+
+.producttext p {
+    font-size: x-large;
+
+}
+
+.producttext {
+    padding: 10px;
+    margin-top: 5%;
+    transform: scale(1.1);
+}
+
+.org {
+    text-decoration: line-through;
+    margin-left: 15px;
+    color: #6b747c;
+}
+
+.producttext h1,
+h3,
+button {
+    margin-top: 15px;
+}
+
+.producttext input {
+    padding: 15px 20px;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.productimage img {
+    height: 400px;
+    width: 400px;
+    margin-bottom: 30px;
+    transform: scale(0.9);
+
+}
+
+.sliderimg {
+    display: flex;
+    justify-content: center;
+    column-gap: 20%;
+    margin-top: 7%;
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+
+}
+
+.product {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    background-color: #242424;
+    margin-top: 15px;
+}
+
+figure {
+    position: relative;
+    left: 0;
+    width: 400%;
+    animation: 20s slide infinite;
+}
+
+.slider {
+    width: 25%;
+    float: left;
+    position: relative;
+
+}
+
+.sliderimg {
+    height: 500px;
+    width: 100%;
+}
+
+@keyframes slide {
+    0% {
+        left: 0;
+    }
+
+    10% {
+        left: 0;
+    }
+
+    20% {
+        left: -100%;
+    }
+
+    30% {
+        left: -100%;
+    }
+
+    40% {
+        left: -200%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    55% {
+        left: -300%;
+    }
+
+    /* 65%{
+        left: -300%;
+    } */
+    66% {
+        left: -200%;
+    }
+
+    74% {
+        left: -200%;
+    }
+
+    75% {
+        left: -100%;
+    }
+
+    85% {
+        left: -100%;
+    }
+
+    90% {
+        left: 0;
+
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+
+
+
+
+.featurepro {
+    text-align: center;
+}
+
+.displayproducts img {
+    height: 250px;
+    width: 250px;
+    margin-top: 15px;
+
+
+}
+
+.image1 {
+    padding: 10px;
+}
+
+.price {
+    text-decoration: line-through;
+    margin-left: 15px;
+    color: #6b747c;
+    margin-top: 15px;
+}
+
+.displayproducts {
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+
+
+}
+
+.image1 p {
+    text-align: center;
+
+}
+
+.image1 img {
+    margin-top: 30px;
+
+}
+
+#image1 {
+    transform: scale(0.5)
+}
+
+#image5 {
+    transform: scale(0.5)
+}
+
+#image2 {
+    transform: scale(0.7);
+    margin-right: 15px;
+}
+
+#image4 {
+    transform: scale(0.7);
+    margin-left: 15px;
+
+}
+
+#image {
+    transform: scale(1.2);
+}
+
+.toppro {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.img1 img {
+    height: 130px;
+    width: 130px;
+}
+
+.pro1 {
+    /* width: 20%; */
+    border: 2px solid #262626;
+}
+
+.img1 {
+    padding: 10px;
+    background-color: #161819;
+    text-align: center;
+
+}
+
+.text {
+    padding: 20px;
+}
+
+.text h3 {
+    margin-top: 15px
+}
+
+.par {
+    margin-top: 15px
+}
+
+.text hr {
+    margin-top: 15px
+}
+
+.pri {
+    margin-top: 15px
+}
+
+.pro1-btn {
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.pro1-btn:hover {
+    background-color: rgb(189, 60, 60);
+}
+
+.pri span {
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: #6b747c;
+}
+
+.toppro-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 13px;
+    margin-top: 10%;
+    row-gap: 13px;
+}
+
+.pro1 {
+    border-radius: 5px;
+}
+
+.twenty {
+    font-size: xx-large;
+    padding: 15px;
+    text-align: center;
+    margin-top: 50%;
+
+
+
+
+
+}
+
+.pro2 {
+    align-items: center;
+}
+
+.cont1 {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.cont {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8%;
+
+
+}
+
+.common {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10%;
+    align-items: center;
+    margin-top: 5%;
+    justify-content: center;
+
+
+}
+
+.list li {
+    list-style-type: none;
+    margin-top: 10px;
+
+}
+
+.div1 input {
+    width: 100%;
+    background-color: #161819;
+    border-color: #2f2f2f;
+    padding: 10px;
+    margin-top: 15px;
+
+}
+
+.list {
+    margin-top: 15px;
+}
+
+.div2 p {
+    font-weight: bold;
+}
+
+.div1 button {
+    background-color: red;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.div1 p {
+    margin-top: 15px;
+}
+
+footer hr {
+    margin-top: 15px;
+}
+
+.part {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.part ul {
+    display: flex;
+    column-gap: 40px;
+    margin-right: 40px;
+
+}
+
+.part ul li {
+    list-style-type: none;
+}
+
+.div2 {
+    margin-left: 8%;
+}
+
+.div1 {
+    margin-left: 8%;
+    margin-top: 5%;
+}
+
+footer {
+    background-color: black;
+
+}
+
+.subproducts ul {
+    display: flex;
+    justify-content: center;
+    column-gap: 10%;
+}
+
+.subproducts ul li {
+    list-style-type: none;
+}
+
+.subproducts {
+    margin-top: 5%;
+}
+
+.subproducts ul li div {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.subproducts ul li div:hover {
+    background-color: red;
+
+}
+
+.loginbox {
+    width: 250px;
+    border: 1px solid #2f2f2f;
+    padding: 15px;
+    position: absolute;
+    right: 2%;
+    top: 8%;
+    visibility: hidden;
+    background-color: #575858;
+
+
+
+
+}
+
+.log-ico:hover {
+    color: white;
+}
+
+.log-ico:hover .loginbox {
+    visibility: visible;
+}
+
+
+.fir {
+    margin-top: 10px;
+}
+
+.fir2 {
+    margin-top: 10px;
+}
+
+.loginbox div a {
+    color: white;
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 5px;
+    width: 50%;
+
+
+}
+
+.side {
+    height: 90%;
+    width: 30%;
+    background-color: #2f2f2f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    display: none;
+
+}
+
+.xx-mark {
+    position: absolute;
+    color: #141414;
+    top: 5px;
+    right: 5px;
+    font-size: 25px;
+
+}
+
+.side ul li {
+    margin-top: 20px;
+
+}
+
+.side ul li a {
+    text-decoration: none;
+
+}
+
+.toggle {
+    display: none;
+}

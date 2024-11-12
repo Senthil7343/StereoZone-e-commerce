@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="icon" href="./products/airpods.png">
+    <style>
+        body {
+
+            background-color: #141313;
+            color: #2e2b2b;
+            
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background: #1c1c1c;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ff0000;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #f60909;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ff0000;
+            border-radius: 3px;
+            background: #333;
+            color: #fff;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff0000;
+            border: none;
+            color: white;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #cc0000;
+        }
+
+        #message {
+            margin-top: 20px;
+            text-align: center;
+            color: #ffcccc;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        a input {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            border: none;
+            color: white;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        a input:hover {
+            background-color: #4cae4c;
+        }
+
+        #message {
+            margin-top: 20px;
+            text-align: center;
+            color: red;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="background-color: #333;">
+        <h1>Payment Information</h1>
+        <form id="payment-form">
+            <div class="form-group">
+                <label for="payment-method">Payment Method</label>
+                <select id="payment-method" required>
+                    <option value="">Select Payment Method</option>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="upi">UPI</option>
+                    <option value="net-banking">Net Banking</option>
+                    <option value="cod">Cash on Delivery</option>
+                </select>
+            </div>
+
+            <div id="credit-card-fields" class="hidden">
+                <div class="form-group">
+                    <label for="card-name">Cardholder Name</label>
+                    <input type="text" id="card-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" id="card-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiry">Expiry Date</label>
+                    <input type="text" id="expiry" placeholder="MM/YY" required>
+                </div>
+                <div class="form-group">
+                    <label for="cvc">CVC</label>
+                    <input type="text" id="cvc" required>
+                </div>
+            </div>
+
+            <div id="upi-fields" class="hidden">
+                <div class="form-group">
+                    <label for="upi-id">UPI ID</label>
+                    <input type="text" id="upi-id" required>
+                </div>
+            </div>
+
+            <div id="net-banking-fields" class="hidden">
+                <div class="form-group">
+                    <label for="bank-name">Bank Name</label>
+                    <input type="text" id="bank-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="account-number">Account Number</label>
+                    <input type="text" id="account-number" required>
+                </div>
+            </div>
+
+
+            <a href="thank.html"><input type="button" value="pay now"></a>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script>
+        const paymentMethodSelect = document.getElementById('payment-method');
+        const creditCardFields = document.getElementById('credit-card-fields');
+        const upiFields = document.getElementById('upi-fields');
+        const netBankingFields = document.getElementById('net-banking-fields');
+
+        paymentMethodSelect.addEventListener('change', function () {
+            const selectedMethod = paymentMethodSelect.value;
+            creditCardFields.classList.add('hidden');
+            upiFields.classList.add('hidden');
+            netBankingFields.classList.add('hidden');
+
+            if (selectedMethod === 'credit-card') {
+                creditCardFields.classList.remove('hidden');
+            } else if (selectedMethod === 'upi') {
+                upiFields.classList.remove('hidden');
+            } else if (selectedMethod === 'net-banking') {
+                netBankingFields.classList.remove('hidden');
+            }
+        });
+
+        document.getElementById('payment-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const selectedMethod = paymentMethodSelect.value;
+
+            if (selectedMethod === 'credit-card') {
+                const name = document.getElementById('card-name').value;
+                const cardNumber = document.getElementById('card-number').value;
+                const expiry = document.getElementById('expiry').value;
+                const cvc = document.getElementById('cvc').value;
+
+                if (!name || !cardNumber || !expiry || !cvc) {
+                    document.getElementById('message').textContent = 'Please fill in all fields.';
+                    return;
+                }
+                document.getElementById('message').textContent = 'Processing credit card payment...';
+            } else if (selectedMethod === 'upi') {
+                const upiId = document.getElementById('upi-id').value;
+
+                if (!upiId) {
+                    document.getElementById('message').textContent = 'Please enter your UPI ID.';
+                    return;
+                }
+                document.getElementById('message').textContent = 'Processing UPI payment...';
+            } else if (selectedMethod === 'net-banking') {
+                const bankName = document.getElementById('bank-name').value;
+                const accountNumber = document.getElementById('account-number').value;
+
+                if (!bankName || !accountNumber) {
+                    document.getElementById('message').textContent = 'Please fill in all fields.';
+                    return;
+                }
+                document.getElementById('message').textContent = 'Processing net banking payment...';
+            } else if (selectedMethod === 'cod') {
+                document.getElementById('message').textContent = 'Cash on delivery selected. Processing...';
+            } else {
+                document.getElementById('message').textContent = 'Please select a payment method.';
+                return;
+            }
+
+
+            setTimeout(() => {
+                document.getElementById('message').textContent = 'Payment successful!';
+            }, 2000);
+        });
+    </script>
+</body>
+
+</html>

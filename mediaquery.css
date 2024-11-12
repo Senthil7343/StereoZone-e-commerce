@@ -1,0 +1,129 @@
+@media screen and (max-width: 600px){
+    .menubars{
+        display: none;
+    }
+   
+    .toggle{
+        display: block;
+    }
+    
+    .toppro-products{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 13px;
+        margin-top: 10%;
+        row-gap: 13px;
+    }
+    .common{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        column-gap: 10%;
+        align-items: center;
+        margin-top: 10% ;
+        justify-content: center ;
+    }  
+    .list {
+        list-style-type: none;
+        margin-top: 30px;
+    }
+    .div2 p{
+        margin-top: 30px;
+    }   
+    .div1 input{
+        width: 80%;
+    }
+    .part{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 15px;
+
+    }
+    .part ul{
+        margin-left: 25%;
+        
+    }
+    .cont{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        row-gap: 20px;
+        
+    }
+    .cont1{
+        margin-left: 20%;
+    }
+    .product{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 0;
+        padding: 0;
+    }
+    .pro-div1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-right: 70px;
+        column-gap: 20px;
+        
+    }
+    .pro-div2 div button img{
+        height: 300px;
+        width: 300px;
+    }
+    .section{
+        display: grid;
+        grid-template-columns: repeat(1,fr);
+    }
+    .firstsection{
+        width: 100%;
+        padding: 0;
+    }
+    .secondsection{
+        width: 70%;
+        margin-right: 30px;
+        
+    }
+    .secondd p{
+        margin-top: 20px;
+    }
+    .boo{
+        display:none ;
+    }
+
+   
+}    
+@media screen and (max-width: 600px) {
+    .displayproducts {
+        display: flex;
+        overflow-x: auto;     
+        overflow-y: hidden;  
+        justify-content: flex-start;
+        padding: 10px;
+        -ms-overflow-style: none;  
+        scrollbar-width: none;   
+    }
+
+
+    .image1 {
+        flex: 0 0 auto;
+        width: 200px;  
+        margin: 10px;
+    }
+
+    .displayproducts img {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+
+    #image1, #image5 {
+        transform: scale(1);
+    }
+
+    #image2, #image4 {
+        transform: scale(1);
+        margin: 0;
+    }
+}
+
+
+

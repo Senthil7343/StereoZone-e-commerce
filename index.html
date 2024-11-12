@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StereoZone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="icon" href="./products/airpods.png">
+</head>
+
+<body>
+    <header>
+        <div class="headname">
+            <h1>stereo<span>Z</span>one</h1>
+        </div>
+        <div class="menubars">
+            <ul>
+                <li><input type="text" name="search"
+                        style="border: 2px solid #6b747c; background-color: transparent; border-radius: 5px; padding: 5px; color: white; margin-bottom: 5px;"
+                        placeholder="search"></li>
+                <li><i id="sear" class="fa-solid fa-magnifying-glass"></i></li>
+                <li><a style="border: none;" href="addtocart.html"><i class="fa-solid fa-cart-plus"></i></a></li>
+                <li class="log-ico">
+                    <a href="" onclick="abe()">
+                        <i class="fa-regular fa-user"></i>
+
+
+                    </a>
+                    <div class="loginbox">
+                        <div class="fir">
+                            <h3>HEllO !</h3>
+                            <p>Access account and manage orders</p>
+                        </div>
+                        <div class="fir3" style="border: 1px solid gray;  margin-top: 10px; ">
+                            <a href="">login</a>|<a href="">sign up</a>
+                        </div>
+                        <hr style="margin-top: 10px;">
+                        <div class="fir2">
+                            <p>please login</p>
+                        </div>
+
+                    </div>
+
+                </li>
+            </ul>
+
+
+        </div>
+        <div class="toggle">
+            <a onclick="togcli()" id="toggle-ico" style="text-decoration: none; color: white;" href=""><i id="icon"
+                    class="fa-solid fa-bars"></i></a>
+        </div>
+    </header>
+
+    <form action="">
+
+        <div class="product">
+            <figure>
+                <div class="slider">
+                    <div class="sliderimg">
+                        <div class="producttext">
+                            <p>boAt Airdopes 131</p>
+                            <h1>Featherweight For</h1>
+                            <h1>Coomfort All-Day</h1>
+                            <h3>1,099<span class="org">2,990</span></h3>
+                            <input class="pro-shop-btn" type="button" name="button" value="Shop Now">
+                        </div>
+                        <div class="productimage">
+                            <img src="./products/boat131-3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider">
+                    <div class="sliderimg">
+                        <div class="producttext">
+                            <p>boAt Airdopes 131</p>
+                            <h1>Featherweight For</h1>
+                            <h1>Coomfort All-Day</h1>
+                            <h3>1,099<span class="org">2,990</span></h3>
+                            <input class="pro-shop-btn" type="button" name="button" value="Shop Now">
+                        </div>
+                        <div class="productimage">
+                            <img src="./products/boat131-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slider">
+                    <div class="sliderimg">
+                        <div class="producttext">
+                            <p>boAt Airdopes 131</p>
+                            <h1>Featherweight For</h1>
+                            <h1>Coomfort All-Day</h1>
+                            <h3>1,099<span class="org">2,990</span></h3>
+                            <input class="pro-shop-btn" type="button" name="button" value="Shop Now">
+                        </div>
+                        <div class="productimage">
+                            <img src="./products/boat131-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </figure>
+        </div>
+
+
+
+        <div class="featurepro" style="margin-top: 15px;">
+            <h2>Feature Product</h2>
+        </div>
+
+        <div class="displayproducts">
+            <div class="image1" id="image1">
+                <p>JBL Endurance Run sports</p>
+                <img src="./products/jbl-endu-1.png" alt="">
+                <p>₹999<span class="price">₹1,599</span></p>
+            </div>
+
+            <div class="image1" id="image2">
+                <p>boAt Airdops 203</p>
+                <img src="./products/boat203-1.png" alt="">
+                <p>₹1.074<span class="price">₹3,999</span></p>
+            </div>
+
+            <div class="image1" id="image3">
+                <p>boAt RocKerz 518</p>
+                <img src="./products/boat518-1.png" alt="">
+                <p>₹1,299<span class="price">₹3,990</span></p>
+            </div>
+
+            <div class="image1" id="image4">
+                <p>JBL Tune 760 NC</p>
+                <img src="./products/jbl760nc-1.png" alt="">
+                <p>₹5,999<span class="price">₹7,999</span></p>
+            </div>
+
+            <div class="image1" id="image5">
+                <p>boAt RocKerz 255</p>
+                <img src="./products/boat255r-1.png" alt="">
+                <p>₹899<span class="price">₹2,990</span></p>
+            </div>
+
+        </div>
+
+        <div class="toppro">
+            <h2>Top Products</h2>
+        </div>
+
+        <div class="subproducts">
+            <ul>
+                <li>
+                    <div>All</div>
+                </li>
+                <li>
+                    <div>Heaphones</div>
+                </li>
+                <li>
+                    <div>Earbuds</div>
+                </li>
+                <li>
+                    <div>Earphone</div>
+                </li>
+                <li>
+                    <div>Neckbands</div>
+                </li>
+
+            </ul>
+        </div>
+
+
+
+        <div class="toppro-products">
+
+            <div class="pro1">
+                <div class="img1">
+                    <img src="./products/jbl660nc-1.png" alt="">
+                </div>
+                <div class="text">
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                    </div>
+                    <h3>JBL Live 660NC</h3>
+                    <div class="par">
+                        <p>Wireless Over-Ear NC</p>
+                        <p>Headphone</p>
+                    </div>
+                    <hr>
+                    <div class="pri">
+                        <p>₹9,999 <span>₹14,999</span></p>
+                    </div>
+                    <div class="btn">
+
+                        <a href="cartpage.html"><input class="pro1-btn" type="button" name="button"
+                                value="Shop Now"></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="pro1">
+                <div class="img1">
+                    <img src="./products/boat518-1.png" alt="">
+                </div>
+                <div class="text">
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                    </div>
+                    <h3>boAt RocKerz 518</h3>
+                    <div class="par">
+                        <p>on-Ear wireless headphones </p>
+                        <p>Headphone</p>
+                    </div>
+                    <hr>
+                    <div class="pri">
+                        <p>₹1,299 <span>₹3,990</span></p>
+                    </div>
+                    <div class="btn">
+                        <button class="pro1-btn">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="pro1">
+                <div class="img1">
+                    <img src="./products/boat131-1.png" alt="">
+                </div>
+                <div class="text">
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                    </div>
+                    <h3>Boat Airpods 131</h3>
+                    <div class="par">
+                        <p>Wireless in Ear-Earbuds</p>
+                        <p>Headphone</p>
+                    </div>
+                    <hr>
+                    <div class="pri">
+                        <p>₹1,990 <span>₹2,990</span></p>
+                    </div>
+                    <div class="btn">
+                        <button class="pro1-btn">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="pro1">
+                <div class="img1">
+                    <img src="./products/boat110-1.png" alt="">
+                </div>
+                <div class="text">
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                    </div>
+                    <h3>boAt BassHead 110</h3>
+                    <div class="par">
+                        <p>In-Wired Earphone</p>
+                        <p>Headphone</p>
+                    </div>
+                    <hr>
+                    <div class="pri">
+                        <p>₹449 <span>₹990</span></p>
+                    </div>
+                    <div class="btn">
+                        <button class="pro1-btn">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro1">
+                <div class="img1">
+                    <img src="./products/boat410-1.png" alt="">
+                </div>
+                <div class="text">
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                    </div>
+                    <h3>BoAt Rockerz 410</h3>
+                    <div class="par">
+                        <p>Bluetooth & Wired on Ear-Earbuds</p>
+                        <p>Headphone</p>
+                    </div>
+                    <hr>
+                    <div class="pri">
+                        <p>₹1,599<span>₹2.990</span></p>
+                    </div>
+                    <div class="btn">
+                        <button class="pro1-btn">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro1">
+                <div class="img1">
+                    <img src="./products/jbl200bt-1.png" alt="">
+                </div>
+                <div class="text">
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                    </div>
+                    <h3>JBL Live 200BT</h3>
+                    <div class="par">
+                        <p>In Wireless Neckbands</p>
+                        <p>Headphone</p>
+                    </div>
+                    <hr>
+                    <div class="pri">
+                        <p>₹3,699 <span>₹5,2999</span></p>
+                    </div>
+                    <div class="btn">
+                        <button class="pro1-btn">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="pro1">
+                <div class="img1">
+                    <img src="./products/sonyXb910n-1.png" alt="">
+                </div>
+                <div class="text">
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                    </div>
+                    <h3>SONY WH - XB910N</h3>
+                    <div class="par">
+                        <p>Wireless Over Ear-Earbuds</p>
+                        <p>Headphone</p>
+                    </div>
+                    <hr>
+                    <div class="pri">
+                        <p>₹13,483 <span>₹19,990</span></p>
+                    </div>
+                    <div class="btn">
+                        <button class="pro1-btn">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="pro1">
+                <div class="img1">
+                    <img src="./products/jbl760nc-1.png" alt="">
+                </div>
+                <div class="text">
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                    </div>
+                    <h3>JBL Tune 760C</h3>
+                    <div class="par">
+                        <p>Wireless over Ear - NC Earbuds</p>
+                        <p>Headphone</p>
+                    </div>
+                    <hr>
+                    <div class="pri">
+                        <p>₹5,999 <span>₹7.999</span></p>
+                    </div>
+                    <div class="btn">
+                        <button class="pro1-btn">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pro1">
+                <div class="img1">
+                    <img src="./products/boat255r-1.png" alt="">
+                </div>
+                <div class="text">
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                    </div>
+                    <h3>boAt Rockerz 255</h3>
+                    <div class="par">
+                        <p>In Ear-Wireless Neckband
+                        <p>
+                        <p>Headphone</p>
+                    </div>
+                    <hr>
+                    <div class="pri">
+                        <p>₹899 <span>₹12,990</span></p>
+                    </div>
+                    <div class="btn">
+                        <button class="pro1-btn">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="pro1">
+                <div class="img1">
+                    <img src="./products/jbl100-1.png" alt="">
+                </div>
+                <div class="text">
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                    </div>
+                    <h3>JBL Wave 100</h3>
+                    <div class="par">
+                        <p>In Ear-Trule Wireless Earbuds</p>
+                        <p>Headphone</p>
+                    </div>
+                    <hr>
+                    <div class="pri">
+                        <p>₹2,999 <span>₹6,999</span></p>
+                    </div>
+                    <div class="btn">
+                        <button class="pro1-btn">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="pro1">
+                <div class="img1">
+                    <img src="./products/sony1000xm4-1.png" alt="">
+                </div>
+                <div class="text">
+                    <div class="stars">
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                        <i class="fa-solid fa-star" style="color: red;"></i>
+                    </div>
+                    <h3>SONY WF-1000XM4</h3>
+                    <div class="par">
+                        <p>Wireless In - Ear NC Headphone</p>
+                        <p>Headphone</p>
+                    </div>
+                    <hr>
+                    <div class="pri">
+                        <p>₹19,990 <span>₹24,990</span></p>
+                    </div>
+                    <div class="btn">
+                        <button class="pro1-btn" style="background-color: #ff0000; ">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="pro1" id="pro2">
+                <p class="twenty ">Browser All Products<i class="fa-solid fa-arrow-right"></i></p>
+            </div>
+
+
+        </div>
+
+
+        <div class="advan">
+            <h2 style="text-align: center; margin-top: 10%;">Our Advantages</h2>
+        </div>
+
+        <div class="cont">
+            <div class="cont1">
+                <div class="ico">
+                    <i class="fa-solid fa-truck-fast" style="color: #ff0000; font-size: 45px; margin-top: 15px;"></i>
+                </div>
+                <div class="text1">
+                    <h3>Express Delivery</h3>
+                    <h3 style="font-weight: normal; color: #6b747c;">ships in 24hrs</h3>
+                </div>
+            </div>
+
+            <div class="cont1">
+                <div class="ico">
+                    <i class="fa-solid fa-shield-halved" style="color: red; font-size: 45px; margin-top: 15px ;"></i>
+                </div>
+                <div class="text1">
+                    <h3>Brand Warrenty</h3>
+                    <h3 style="font-weight: normal; color: #6b747c;">100% Original Products</h3>
+                </div>
+            </div>
+
+            <div class="cont1">
+                <div class="ico">
+                    <i class="fa-solid fa-tags" style="color: #ff0000; font-size: 45px; margin-top: 15px;"></i>
+                </div>
+                <div class="text1">
+                    <h3>Exciting Deals</h3>
+                    <h3 style="font-weight: normal; color: #6b747c;">On all Prepaind Orders</h3>
+                </div>
+            </div>
+
+            <div class="cont1">
+                <div class="ico">
+                    <i class="fa-solid fa-credit-card" style="color: #ff0000; font-size: 45px; margin-top: 15px;"></i>
+                </div>
+                <div class="text1">
+                    <h3>Secure Payments</h3>
+                    <h3 style="font-weight: normal; color: #6b747c;">SSL/Secure Certificate</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="common">
+                <div class="div1">
+                    <h1>stereo<span>Z</span>one</h1>
+                    <p>Subscribe to our email alerts to receive early discount offers, and new products info.</p>
+                    <input type="email" name="email" placeholder="Email Address">
+                    <button>Subscribe</button>
+                </div>
+
+                <div class="div2">
+                    <p>Helps</p>
+                    <ul class="list">
+                        <li>FAQS</li>
+                        <li>Track Order</li>
+                        <li>Cancel Order</li>
+                        <li>Return Order</li>
+                        <li>Warrenty info</li>
+                    </ul>
+                </div>
+
+
+                <div class="div2">
+                    <p>Policies</p>
+                    <ul class="list">
+                        <li>Return Policy</li>
+                        <li>Security</li>
+                        <li>Site map</li>
+                        <li>Privacy & Policy</li>
+                        <li>Terms & Conditions</li>
+                    </ul>
+                </div>
+
+                <div class="div2">
+                    <p>Company</p>
+                    <ul class="list">
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                        <li>Service Centers</li>
+                        <li>Careers</li>
+                        <li>Affilietes</li>
+                    </ul>
+
+
+                </div>
+            </div>
+            <hr>
+            <div class="part">
+                <p>
+                    2024|All right Reserved. Build by | ADHARSA HELVAR
+                </p>
+                <ul>
+                    <li><i class="fa-brands fa-facebook-f"></i></li>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-linkedin-in"></i></li>
+                </ul>
+            </div>
+        </footer>
+
+        <div class="side">
+            <ul>
+                <li><a style="color: white;" href="">Search</a></li>
+                <li><a style="color: white;" href="">Add To Cart</a></li>
+                <li><a style="color: white;" href="">Login</a></li>
+            </ul>
+
+            <div class="xx-mark">
+                <button class="xx-mark">
+                    <i style="color: white;" class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>

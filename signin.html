@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./products/airpods.png">
+    <style>
+        body{
+            align-content: center;
+            background-color: #201f1f;
+        }
+        .sign-in{
+            width: 30%; 
+            border: 2px solid black;
+            padding: 40px;
+            background-color: #141414;
+            color:white;
+            position: relative;
+            margin-top: 50px;
+            margin-left: 30%;
+            
+            
+            
+        }
+        .deta input{
+            margin-top: 20px;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: transparent;
+            border-color: white;
+            border-radius: 5px;
+            border-width: 1px;
+
+        }
+        .one{
+            text-align: center;
+        }
+        hr{
+        margin-top: 40px;
+        }
+        .threebox{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 40px;
+        }
+        .two-1{
+            padding: 10px 15px;
+            background-color: rgb(35, 130, 161);
+            color: white;
+            border: none;
+
+        }
+        .three-1{
+            padding: 10px 15px;
+            background-color: rgb(206, 92, 39);
+            color: white;
+            border: none;
+            
+        }
+        .four-1{
+            padding: 10px 15px;
+            background-color: rgb(58, 61, 194);
+            color: white;
+            border: none;
+            
+        }
+        .one{
+            background-color: red;
+        }
+        
+        .div-xx{
+            padding: 10px;
+            color: white;
+            background-color:#141414 ;
+            position: relative;
+            left: 40%;
+            bottom: 97px;
+            width: 15%;
+        }
+        i{
+            color: white;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            font-size: x-large;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="sign-in">
+        <div class="head">
+            <h1>
+                Sign up
+            </h1>
+            <p>I have Already Account ?<a style="color: white; text-decoration: none;" href=""> Login</a></p>
+        </div>
+        <div class="deta">
+            <input type="text" name="text" placeholder="User Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="password" placeholder="Confirm Password">
+            <input style="background-color: red; color: white; border: none;" type="button" name="button" value="Sign up">
+        </div>
+        <hr>
+        <div class="threebox">
+            <a href=""><input class="two-1" type="button" value="Facebook"></a>
+            <a href=""><input class="three-1"type="button" value="Google"></a>
+            <a href=""><input class="four-1" type="button" value="Twitter"></a>
+        </div>
+        <div class="div-xx">Login in</div>
+        <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+    </div>
+</body>
+</html>
